@@ -131,6 +131,9 @@ powershell -ExecutionPolicy Bypass -File build.ps1
 
 ```
 .
+├── README.md                  # 本文件
+├── LICENSE                    # MIT 许可证
+├── .gitignore                 # 忽略 dist/ 与生成的图标
 ├── build.ps1                  # 一键构建脚本（图标 → 编译 → 打包）
 ├── src/
 │   ├── Calculator.cs          # 全部应用代码（单文件 WinForms）
@@ -138,7 +141,7 @@ powershell -ExecutionPolicy Bypass -File build.ps1
 ├── build/
 │   ├── installer.iss          # Inno Setup 6 安装脚本
 │   ├── make-icon.ps1          # 生成多尺寸 .ico（16~256px）
-│   ├── app.ico                # 生成的图标（构建时重新生成）
+│   ├── app.ico                # 生成的图标（构建时重新生成，已 gitignore）
 │   ├── README.txt             # 安装包内附带的说明文件
 │   └── lang/
 │       └── ChineseSimplified.isl   # 安装向导中文语言包
@@ -206,4 +209,4 @@ powershell -ExecutionPolicy Bypass -File tools\shot.ps1 -Exe <exe路径> -Out <�
 
 ## 许可
 
-内部项目，未开源授权。如需对外发布请补充许可证文件。
+[MIT](LICENSE) © 2026 liunian0403
