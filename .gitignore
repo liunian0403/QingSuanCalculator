@@ -1,0 +1,11 @@
+# 构建产物
+dist/
+
+# 生成的图标（由 build\make-icon.ps1 生成）
+build/app.ico
+
+# 临时 / 备份文件
+*.tmp
+*.bak
+*.user
+.vs/
